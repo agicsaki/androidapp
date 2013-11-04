@@ -17,20 +17,22 @@ public class Course {
 		name = n;
 	}
 	
-	private void setName(String n) {
+	public void setName(String n) {
 		name = n;
 	}
 	
-	private void setGoalGrade(int g) {
+	public void setGoalGrade(int g) {
 		goalGrade = g;
 	}
 	
-	private void addAssignment(Assignment a) {
-		myAssigments.add(a);
+	public void addAssignment(Assignment a) {
+		myAssignments.add(a);
 	}
 	
-	private void calculateCurrentGrade() {
-		int x = currentGrade;
+	public void calculateCurrentGrade() {
+		for (Assignment a : myAssignments) {
+			currentGrade += a.getWeightedGrade();
+		}
 	}
 	
 	

@@ -12,24 +12,24 @@ public class Assignment {
 		name = n;
 	}
 	
-	private void setName(String n) {
+	public void setName(String n) {
 		name = n;
 	}
 	
-	private void setEarnedGrade(int g) {
+	public void setEarnedGrade(int g) {
 		earnedGrade = g;
 	}
 	
-	private void setWeight(int w) {
+	public void setWeight(int w) {
 		weight = w;
 	}
 	
-	private void calculateSuggestedGrade() {
+	public void calculateSuggestedGrade() {
 		// retrieve list
 		
 	}
 	
-	private int getWeightedGrade() {
+	public int getWeightedGrade() {
 		if (earnedGrade != 0) {
 			return earnedGrade * (weight / 100);
 		}
